@@ -1,0 +1,14 @@
+main
+let
+  var r: int := 1;
+  function fact(n: int): int
+  begin
+    if n == 1 then return 1; endif;
+    r := fact(n - 1);
+    return n * r;
+  end;
+in
+begin
+  r := fact(5);
+  printi(r);
+end

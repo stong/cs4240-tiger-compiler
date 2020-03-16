@@ -1,0 +1,13 @@
+main
+let
+        var a, b : int := 0;
+in
+begin
+        if(a == b) then
+                a := b + 2;
+	else
+		a := 2;
+        endif;
+
+        printi(a);
+end

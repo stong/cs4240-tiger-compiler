@@ -1,0 +1,9 @@
+main let
+    var X : int;
+in begin
+	X := 5-3-2;
+	X := 5+3+2;
+	X := 5*3*2;
+	X := 4/2/2;
+	X := 5**3**2;	
+end

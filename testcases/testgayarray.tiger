@@ -1,0 +1,16 @@
+/* float for index*/
+main
+let
+
+	type myArray = array [100] of int;
+	type myArray2 = array [1] of float;
+	var X: myArray := 69;
+	var X2: myArray2 := 1.0;
+	var y : float := 0;
+
+in
+begin
+	y:=X[1];
+	y:=X2[0];
+    printi(X[0]);
+end

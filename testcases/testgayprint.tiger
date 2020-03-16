@@ -1,0 +1,6 @@
+main let
+    var X : int := 5;
+in begin
+    X := X * 3;
+    printi(X);
+end

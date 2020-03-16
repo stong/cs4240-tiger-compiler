@@ -1,0 +1,11 @@
+main
+let
+        var x : int;
+        function print ( n : int ) : int begin
+                printi(n);
+                return n;
+        end;
+in
+begin
+        print(5);
+end

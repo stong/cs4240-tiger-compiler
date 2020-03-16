@@ -1,0 +1,14 @@
+/* float for index*/
+main
+let
+
+	type myArray = array [100] of float;
+	var x : int := 0;
+	var y : float := 1;
+	var X: myArray := 1.11;
+	
+in
+begin
+	y:=X[1.1] + 0.01;
+
+end

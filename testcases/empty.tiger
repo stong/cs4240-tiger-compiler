@@ -1,0 +1,8 @@
+main let
+    var X : int;
+in begin
+    X := 5;
+    while 0 do
+        break;
+    enddo;
+end

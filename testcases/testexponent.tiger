@@ -1,0 +1,14 @@
+main
+let
+
+	var N, X, Y : float := 0.0;
+	var Z : int :=1;
+
+in
+begin
+/*The exponentiation operator ** can have its left operand as integer or a float but the
+right operand must be an integer; it is a semantic error otherwise */
+	N:=Z**Y;   /* This should cause semantic error */
+	N:=Y**Z;
+	
+end

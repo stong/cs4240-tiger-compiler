@@ -1,0 +1,8 @@
+main let
+        var X : int;
+        function simple ( n : int ) : int begin
+             return n;
+        end;
+in begin
+        X := simple(5);
+end

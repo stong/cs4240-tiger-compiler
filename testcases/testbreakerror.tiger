@@ -1,0 +1,18 @@
+main
+let
+
+	var X, Y : float := 1.1;
+	var i, Z, W : int := 2;
+
+in
+begin
+       for i := 0 to 99 do /* for loop for dot producWt */
+                break;
+       enddo;
+       while i==2 do
+       	        break;
+       enddo;
+
+    break;          /*break outside a for loop should cause a semantic error*/
+
+end

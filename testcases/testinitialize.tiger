@@ -1,0 +1,17 @@
+main
+let
+
+	var X, Y : float := 0.0;
+	var Z : int :=1;
+
+in
+begin
+/* If a declaration of the name is not found anywhere, it means the entity is
+undeclared and constitutes a semantic error.  */
+
+    Z:=X;
+    M:=2*Z;   /* undeclared variable - should have caused a semantic error */
+	N(2*Y);   /* undeclared function - - should have caused a semantic error */
+	S[1]:=0;  /* undeclared array - should have caused a semantic error */
+
+end

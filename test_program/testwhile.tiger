@@ -1,0 +1,12 @@
+main
+let
+    var i : int := 1;
+	var X : int := 10;
+    var Y : int;
+in
+begin
+	while i * X != i do
+		X := X - 1;
+        printi(X);
+    enddo;
+end

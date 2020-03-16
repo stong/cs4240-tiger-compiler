@@ -1,0 +1,9 @@
+main
+let
+ in
+begin
+   printi(1==1&2==2);
+   printi(1==1&1==2);
+   printi((1==1|1==2)&(1==1));
+   printi((1==1|1==2)&(1==2));
+end

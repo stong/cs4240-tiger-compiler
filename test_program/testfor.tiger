@@ -1,0 +1,13 @@
+main
+let
+        type ArrayInt = array [100] of int; 
+        var X, Y : ArrayInt := 10; 
+        var i, sum : int := 0;
+
+in
+begin
+        for i := 0 to 99 do 
+                sum := sum + X[i] * Y [i];
+        enddo;
+        printi(sum); 
+end

@@ -1,0 +1,19 @@
+main
+let
+	var X : int := 0;
+	
+	function func1 (Y : int) : int begin
+	    let
+            var Y : int := 0;
+	        function func2 (Z : int) : int begin
+                return X+Y+Z;
+            end;
+        in
+            X := func2(2);
+            return X;
+        end;
+    end;
+in
+begin
+	X:= func1(1);
+end

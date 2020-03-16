@@ -1,0 +1,21 @@
+#start_function main
+void main():
+int-list: $X, $i, $t0, $t1, $t2,
+float-list: 
+    assign, $i, 1,
+    assign, $X, 10,
+main:
+label_0:
+    mult, $i, $X, $t0
+    assign, $t1, 0,
+    breq, $t0, $i, label_2
+    assign, $t1, 1,
+label_2:
+    breq, $t1, 0, label_1
+    sub, $X, 1, $t2
+    assign, $X, $t2,
+    goto, label_0
+label_1:
+    return, , ,
+#end_function main
+

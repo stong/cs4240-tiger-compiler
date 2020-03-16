@@ -1,0 +1,12 @@
+.idea
+.gradle
+**.jar
+**.class
+**.iml
+**.ipr
+*.pdf
+build/
+out/
+src/main/gen/
+submit.tar.gz
+test_program

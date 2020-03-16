@@ -1,0 +1,18 @@
+/* Expression_list testing */
+main
+let
+	var X, Y : float := 0.0;
+	
+	function print (X : int, Y: float, Q: int, R: int, S: int) : int begin
+	    let
+	        var YEET : int := 5;
+	    in
+            X := 42;
+            return X;
+        end;
+    end;
+in
+begin
+	X:=print((1+2/3-4) ** 1 - (4-5*6+7), X, 1,2,3);
+	X:= (1+2/3-4) ** 1 - (4-5*6+7);
+end

@@ -1,0 +1,13 @@
+let
+
+	var X, Y : float := 0.0;
+	var Z : float;
+
+in
+/* The comparison operators do not associate, e.g., a=b=c is erroneous */
+
+	while (X=Y=1) do
+	Y:=Y+1;
+	enddo;
+
+end

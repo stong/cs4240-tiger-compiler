@@ -1,0 +1,13 @@
+main let
+    type fuck = float;
+    var X : int;
+    var Y : float;
+    var Z : fuck;
+in begin
+    Z := Y;
+    Y := Z;
+	Y := Y*Y;
+	Y := X*Y;
+	Y := Y ** X;
+	Y := X;
+end

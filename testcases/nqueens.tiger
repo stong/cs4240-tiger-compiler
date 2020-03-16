@@ -1,0 +1,48 @@
+main
+let
+
+    type intArray = array [ 8 ] of int;
+    type intArray2 = array [15] of int;
+    var row : intArray := 0;
+    var col : intArray := 0;
+    var diag1 : intArray2 := 0;
+    var diag2 : intArray2 := 0;
+    var X : int;
+
+    function try(c:int) : int
+    begin
+        let
+            var r : int;
+        in
+            if c > 7 then /* base case */
+                return 1;
+            endif;
+            for r := 0 to 7 do
+                if (row[r]==0 & diag1[r+c]==0 & diag2[r+7-c]==0) then
+                    row[r]:=1;
+                    diag1[r+c]:=1;
+                    diag2[r+7-c]:=1;
+                    col[c]:=r;
+                    X := try(c+1);
+                    if X == 1 then
+                        return 1;
+                    endif;
+                    row[r]:=0;
+                    diag1[r+c]:=0;
+                    diag2[r+7-c]:=0;
+                endif;
+            enddo;
+            return 0;
+        end;
+    end;
+ in
+begin
+    let
+        var c : int;
+    in
+        X := try(0);
+        for c := 0 to 7 do
+            printi(col[c]);
+        enddo;
+    end;
+end

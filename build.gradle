@@ -1,0 +1,38 @@
+plugins {
+    id 'java'
+    id 'antlr'
+}
+
+group 'gang.weed.gang.gang'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+generateGrammarSource {
+    arguments += ["-visitor", "-long-messages"]
+}
+
+sourceSets.main.java.srcDirs = ['src/main/java', 'src/main/gen', 'build/generated-src/antlr/main']
+
+jar {
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+
+    manifest {
+        attributes 'Main-Class': 'com.gangweedganggang.cs4240.Main'
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile 'org.apache.commons:commons-lang3:3.6'
+    compile group: 'org.antlr', name: 'antlr4-runtime', version: '4.7.2'
+    antlr "org.antlr:antlr4:4.7.2" // use ANTLR version 4
+
+    compile 'net.sourceforge.argparse4j:argparse4j:0.8.1'
+}
