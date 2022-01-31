@@ -4,7 +4,7 @@ The coolest part of this compiler is that since I based the design off LLVM basi
 
 - [Frontend AST to IR](https://github.com/rollsafe/cs4240-tiger-compiler/blob/public/src/main/java/com/gangweedganggang/cs4240/frontend/TigerFrontend.java)
 - [Lowering and instruction selection](https://github.com/rollsafe/cs4240-tiger-compiler/blob/public/src/main/java/com/gangweedganggang/cs4240/backend/InstructionSelection.java) (Architecture independent!!)
-- [Briggs register allocator](https://github.com/rollsafe/cs4240-tiger-compiler/blob/public/src/main/java/com/gangweedganggang/cs4240/backend/TargetISA.java) (Architecture independent!!)
+- [Briggs register allocator](https://github.com/rollsafe/cs4240-tiger-compiler/blob/public/src/main/java/com/gangweedganggang/cs4240/backend/BriggsRegisterAllocator.java) (Architecture independent!!)
 - [Abstract target ISA interface](https://github.com/rollsafe/cs4240-tiger-compiler/blob/public/src/main/java/com/gangweedganggang/cs4240/backend/TargetISA.java)
 - [MIPS32 ISA implementation](https://github.com/rollsafe/cs4240-tiger-compiler/blob/public/src/main/java/com/gangweedganggang/cs4240/backend/mips32/MIPS32Target.java)
 
